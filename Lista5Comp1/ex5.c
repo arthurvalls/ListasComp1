@@ -46,8 +46,8 @@ int main()
     {
         if (x[i] != y[i])
         {
-            
-            printf("%d ", x[i]);
+            x[i] = z[i];
+            printf("%d ", z[i]);
             continue;
         }
     }
@@ -57,8 +57,7 @@ int main()
         for (j = 0; j < 5; j++)
             if (x[i] == y[j])
             {
-                z[i] = x[i];
-                printf("%d ", z[i]);
+                printf("%d ", x[i]);
                 count++;
             }
     }

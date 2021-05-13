@@ -2,7 +2,7 @@
 
 int main(){
     int i, k, linha;
-    printf("Insia o numero de linhas: ");
+    printf("Insira o numero de linhas: ");
     scanf("%d", &linha);
     for(i = 1; i <= linha; i++) {
         for(k = 1; k<= i; k++) {

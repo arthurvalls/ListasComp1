@@ -4,7 +4,7 @@ int main()
     int mediaProvas, m1[5][4];
     int i, j, k;
     float media=0;
-    for (int i = 0; i < 5; i++)
+    for (i = 0; i < 5; i++)
     {
         printf("Insira matricula do aluno %d: ", i+1);
         scanf("%d", &m1[i][0]);
