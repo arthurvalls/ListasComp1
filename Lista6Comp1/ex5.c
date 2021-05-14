@@ -2,7 +2,7 @@
 #include <string.h>
 int tamanho(char a[]);
 int comparar(char a[], char b[]);
-char concatenar(char a[],char b[]);
+char concatenar(char a[], char b[]);
 int main()
 {
     char v1[10] = "123454321";
@@ -50,38 +50,17 @@ int comparar(char a[], char b[])
     return 0;
 }
 
-/*char *concatenar(char *a, char *b)
+char concatenar(char a[], char b[])
 {
-    char *primeira = a;
+    int i, j;
+    for (i = 0; a[i] != '\0'; ++i)
+        ;
 
-    while (*a != '\0')
+    for (j = 0; b[j] != '\0'; ++j, ++i)
     {
-        a++;
+        a[i] = b[j];
     }
+    a[i] = '\0';
 
-    while (*b != '\0')
-    {
-        *a = *b;
-        a++;
-        b++;
-    }
-
-    *a = '\0';
-    return primeira;
+    printf("%s", a);
 }
-*/
-
-char concatenar(char a[],char b[])
-{
-   int i, j;
-    for(i=0; a[i]!='\0'; ++i); 
- 
-   for(j=0; b[j]!='\0'; ++j, ++i)
-   {
-      a[i]=b[j];
-   }
-   a[i]='\0';
-   
-   printf("%s", a);
-}
-
